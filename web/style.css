@@ -1,0 +1,55 @@
+body {
+	font-family: system-ui, sans-serif;
+	max-width: 960px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+	color: #33312c;
+	background: #e9e7e1;
+}
+
+h1 {
+	font-size: 1.4rem;
+}
+
+.sub {
+	color: #6b675e;
+	font-size: 0.85rem;
+}
+
+section {
+	margin: 1.5rem 0;
+}
+
+h2 {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.target {
+	color: #6b675e;
+	font-size: 0.8rem;
+	font-weight: 400;
+	margin-left: 0.5rem;
+}
+
+.uptime {
+	float: right;
+	font-size: 0.9rem;
+}
+
+.bar {
+	display: flex;
+	gap: 1px;
+}
+
+.cell {
+	flex: 1;
+	height: 24px;
+	border-radius: 1px;
+	min-width: 1px;
+}
+
+.up { background: #4c9f63; }
+.unstable { background: #dfa63f; }
+.down { background: #c25b52; }
+.nodata { background: #d3d0c8; }

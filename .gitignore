@@ -1,0 +1,8 @@
+/healthcheck
+healthcheck.db
+healthcheck.db-shm
+healthcheck.db-wal
+healthcheck_init.filo
+TODO.md
+go.work
+go.work.sum

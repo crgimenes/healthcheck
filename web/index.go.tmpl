@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="300">
+<title>healthcheck</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>healthcheck</h1>
+<p class="sub">last 7 days, one cell per hour, oldest to newest. generated {{.GeneratedAt}}</p>
+{{range .Services}}
+<section>
+<h2>{{.Name}} <span class="target">{{.Kind}} {{.Target}}</span> <span class="uptime">{{.Uptime}}</span></h2>
+<div class="bar">
+{{range .Cells}}<span class="cell {{.Class}}" title="{{.Title}}"></span>{{end}}
+</div>
+</section>
+{{end}}
+</body>
+</html>

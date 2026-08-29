@@ -1,0 +1,6 @@
+.git
+.github
+healthcheck
+healthcheck.db*
+healthcheck_init.filo
+README.md
