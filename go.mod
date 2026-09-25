@@ -3,7 +3,7 @@ module github.com/crgimenes/healthcheck
 go 1.27.1
 
 require (
-	github.com/crgimenes/filo v0.0.21
+	github.com/crgimenes/filo v0.0.23
 	modernc.org/sqlite v1.59.0
 )
 
